@@ -1,6 +1,6 @@
 {
   "name": "express-watchdog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, zero-dashboard monitoring helper for Express applications that detects slow APIs and server crashes.",
   "main": "index.js",
   "keywords": [
@@ -10,8 +10,13 @@
     "watchdog",
     "performance"
   ],
-  "author": "",
+  "author": "Fayfay",
   "license": "ISC",
+  "files": [
+    "index.js",
+    "README.md",
+    "package.json"
+  ],
   "dependencies": {
     "express": "^5.2.1",
     "nodemailer": "^8.0.1"

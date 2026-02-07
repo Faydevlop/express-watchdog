@@ -6,7 +6,7 @@ A lightweight, zero-dashboard monitoring helper for Express applications. Keep a
 - **Auto-pilot Monitoring:** Automatically detects slow API responses.
 - **Crash Protection:** Listens for process-level errors and unhandled rejections.
 - **Customizable Actions:** Attach your own logic (logging, Slack, Webhooks) when alerts trigger.
-- **Built-in Emailing:** Seamlessly send Gmail alerts to you and your team (CC supported).
+- **Built-in Emailing:** Seamlessly send Gmail alerts to you and your team (single or multiple CC supported).
 - **Clear Reports:** Beautifully structured `WHERE–WHAT–WHEN` formats.
 - **Safe & Minimal:** Zero impact on your app's performance and minimal dependencies.
 
@@ -29,7 +29,7 @@ const app = express();
 monitor(app, {
   slowThresholdMs: 2000,
   alertEmail: process.env.ALERT_EMAIL,
-  ccEmail: process.env.CC_EMAIL,
+  ccEmail: ["dev1@example.com", "dev2@example.com"], // Single string or array of strings
   appPassword: process.env.EMAIL_APP_PASSWORD
 });
 

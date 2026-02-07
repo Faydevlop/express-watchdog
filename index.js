@@ -7,7 +7,7 @@ const nodemailer = require("nodemailer");
  * @param {Object} options - Configuration options.
  * @param {number} [options.slowThresholdMs=2000] - Threshold for slow API detection in milliseconds.
  * @param {string} options.alertEmail - Sender email address (Gmail).
- * @param {string} [options.ccEmail] - CC email address.
+ * @param {string|string[]} [options.ccEmail] - CC email address or array of addresses.
  * @param {string} options.appPassword - Gmail App Password for authentication.
  * @param {Function} [options.onSlow] - Custom handler for slow API alerts.
  * @param {Function} [options.onCrash] - Custom handler for crash alerts.
